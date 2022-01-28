@@ -4,7 +4,7 @@ let somma = 0;
 
 let i=0;
 
-let stop = false;
+
 
 while ( i < 10  ) {
 
