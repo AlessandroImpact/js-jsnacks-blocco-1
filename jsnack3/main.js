@@ -1,30 +1,31 @@
-/* Calcola la somma e la media dei primi 10 numeri. */
+/*Calcola la somma e la media dei primi 10 numeri. */
+
+//dichiaro variabile somma =0
 
 let somma = 0;
+let media = 0;
+const limite =10;
 
-let i=0;
+// scorro i primi 10 numeri
+//ogni numero aggiungo alla variabile somma
 
+for(let i=0 ; i<limite ; i++ ) {
 
-
-while ( i < 10  ) {
-
-    let numero = ParseInt(prompt(' Inserisci un numero'));
-
-    if (isNaN(numero)) {
-
-        alert('numero non valido, inserisco 0')
-
-        numero = 0;      //se utente inserisce un NaN inserisco lo 0
-    }
-
-    somma += somma;
-
-    i++;
-
+    somma += i;
 
 }
 
-/*stampo la somma */
 
-alert('la somma vale : ' + somma);
+
+
+//stampo la somma a video
+
+alert('la somma è : ' + somma);
+
+
+//calcolo la media facendo somma diviso 10
+
+media = somma / limite ;
+
+alert('la media è : ' + media);
 
